@@ -41,11 +41,16 @@ i {
   border-bottom: 1px solid #ccc;
 }
 
+
 .dia-main {
   padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+
+.dia {
+  margin: auto;
 }
 
 .bloque {
