@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -51,6 +53,12 @@ i {
 
 .dia {
   margin: auto;
+  button {
+    padding: 16px 12px;
+    border-radius: .5em;
+    background-color: lightblue;
+    font-family: poppins;
+  }
 }
 
 .bloque {
