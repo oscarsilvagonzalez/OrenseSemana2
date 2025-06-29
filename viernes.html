@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Viernes</title>
   <link rel="stylesheet" href="styles-dias.css">
+  <script>
+function toggleAudio(id, button) {
+    var audio = document.getElementById(id);
+    if (audio.paused) {
+        audio.play();
+        button.textContent = "⏸️ Pausar nota de voz";
+    } else {
+        audio.pause();
+        button.textContent = "▶️ Reproducir nota de voz";
+    }
+    audio.onended = function() {
+        button.textContent = "▶️ Reproducir nota de voz";
+    };
+}
+</script>
 </head>
 <body>
 
@@ -16,7 +31,20 @@
 
   <main class="dia-main">
 
+    
 
+<div class="dia">
+  
+
+  
+  <button onclick="toggleAudio('audioLunes', this)">▶️ Reproducir nota de voz</button>
+  <audio id="audioLunes">
+    <source src="ASSETS/AUDIO/My Giant Bunny Friend.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  
+
+</div>
    
     <section class="bloque">
       <h2>Tomar un buen cafe</h2>
